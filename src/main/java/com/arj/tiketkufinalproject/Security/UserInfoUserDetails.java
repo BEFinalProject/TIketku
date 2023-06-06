@@ -1,6 +1,6 @@
 package com.arj.tiketkufinalproject.Security;
 
-import com.arj.tiketkufinalproject.Entity.UsersEntity;
+import com.arj.tiketkufinalproject.Model.UsersEntity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -12,7 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
     //memo : Any untuk scan semua dari package yang bisa di buat dokumentasinya, dan langsung generate
     @Bean
-    public OpenAPI api(@Value("Dokumentasi Tiketku API Final Project KM 4 - Binar Academy")String appDescription,@Value("v1.0.0") String appVersion){
+    public OpenAPI api(@Value("Dokumentasi 'Tiketku' API")String appDescription,@Value("v1.0.0") String appVersion){
         //pada bagian .apis bisa juga menentukan lokasi sepesifik
         // (RequestHandlerSelectors.basePackage("com.example.challange_chapter4.Controller"))
         return new OpenAPI().info(new io.swagger.v3.oas.models.info.Info()

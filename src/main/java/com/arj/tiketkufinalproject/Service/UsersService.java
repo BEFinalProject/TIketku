@@ -1,7 +1,7 @@
 package com.arj.tiketkufinalproject.Service;
 
-import com.arj.tiketkufinalproject.Entity.UsersEntity;
-import com.arj.tiketkufinalproject.Repository.UsersRepo;
+import com.arj.tiketkufinalproject.Model.UsersEntity;
+import com.arj.tiketkufinalproject.Repository.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -15,10 +15,8 @@ import java.util.UUID;
 
 @Service
 public class UsersService {
-
     @Autowired
-    UsersRepo R;
-
+    private UsersRepository R;
     @Autowired
     private PasswordEncoder passwordEncoder;
 
@@ -35,25 +33,25 @@ public class UsersService {
         LocalDateTime currentDateTime = LocalDateTime.now();
         UsersEntity userExist =  R.findById(param.getUuid_user()).get();
         userExist.setEmail(param.getEmail());
-        userExist.setPassword(param.getPassword());
-        userExist.setFull_name(param.getFull_name());
+        userExist.setPassword(passwordEncoder.encode(param.getPassword()));
         userExist.setGender(param.getGender());
+        userExist.setFull_name(param.getFull_name());
         userExist.setPhone(param.getPhone());
         userExist.setModified_at(currentDateTime);
         return R.save(userExist);
     }
 
     public UsersEntity addUsers(UsersEntity param) {
-        Optional<UsersEntity> userExist = R.findById(param.getUuid_user());
+        Optional<UsersEntity> userExist = R.findByEmail(param.getEmail());
         if (userExist.isPresent()) {
-            throw new RuntimeException("User ID " + param.getUuid_user() + " Sudah Ada");
+            throw new RuntimeException("Username " + param.getEmail() + " Sudah Ada");
         }
 
         LocalDateTime currentDateTime = LocalDateTime.now();
         param.setUuid_user(generateUUID());
         param.setCreated_at(currentDateTime);
         param.setPassword(passwordEncoder.encode(param.getPassword()));
-
+        param.setRoles("ROLE_USER");
         return R.save(param);
 
     }
@@ -83,6 +81,25 @@ public class UsersService {
 
     private UUID generateUUID() {
         return UUID.randomUUID();
+    }
+
+    public UsersEntity resetPassword(String email, String newPassword) {
+        UsersEntity user = R.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("User dengan username " + email + " tidak ditemukan"));
+
+        // Memeriksa apakah password baru sama dengan password sebelumnya
+        if (passwordEncoder.matches(newPassword, user.getPassword())) {
+            throw new RuntimeException("Password baru tidak boleh sama dengan password sebelumnya");
+        }
+
+//        // Memeriksa apakah password sebelumnya sesuai
+//        if (!passwordEncoder.matches(currentPassword, user.getPassword())) {
+//            throw new RuntimeException("Password sebelumnya tidak sesuai");
+//        }
+
+        // Mengubah password baru dan menyimpan perubahan
+        user.setPassword(passwordEncoder.encode(newPassword));
+        return R.save(user);
     }
 
 }

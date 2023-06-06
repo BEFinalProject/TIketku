@@ -1,11 +1,17 @@
 package com.arj.tiketkufinalproject.Response;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
 public class CommonResponse<T>{
+    @Getter
+    @Setter
     private String status;
+    @Getter
+    @Setter
     private String msg;
+    @Getter
+    @Setter
     private T datas;
 
     public CommonResponse() {
