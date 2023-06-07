@@ -45,7 +45,7 @@ public class UserController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostMapping(value = "/Authenticate")
+    @PostMapping(value = "/Login")
     public String authenticateAndGetToken(@RequestBody AuthRequest authRequest){
         Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getEmail(), authRequest.getPassword()));
         if(authentication.isAuthenticated()){
