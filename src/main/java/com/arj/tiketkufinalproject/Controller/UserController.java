@@ -1,10 +1,7 @@
 package com.arj.tiketkufinalproject.Controller;
 
 import com.arj.tiketkufinalproject.Model.UsersEntity;
-import com.arj.tiketkufinalproject.Response.AuthRequest;
-import com.arj.tiketkufinalproject.Response.CommonResponse;
-import com.arj.tiketkufinalproject.Response.CommonResponseGenerator;
-import com.arj.tiketkufinalproject.Response.ResetPasswordRequest;
+import com.arj.tiketkufinalproject.Response.*;
 import com.arj.tiketkufinalproject.Service.JwtService;
 import com.arj.tiketkufinalproject.Service.UsersService;
 import io.swagger.annotations.Api;
@@ -46,28 +43,43 @@ public class UserController {
     private PasswordEncoder passwordEncoder;
 
     @PostMapping(value = "/Login")
-    public String authenticateAndGetToken(@RequestBody AuthRequest authRequest){
-        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getEmail(), authRequest.getPassword()));
-        if(authentication.isAuthenticated()){
-            return String.valueOf(jwtService.generateToken(authRequest.getEmail()));
-        }
-        else {
-            throw new UsernameNotFoundException("Invalid user resquest !");
-        }
+    public CommonResponse<String> authenticateAndGetToken(@RequestBody AuthRequest authRequest){
+        try{
+            Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(authRequest.getEmail(), authRequest.getPassword()));
+            if(authentication.isAuthenticated()){
+                UsersEntity getUser = new UsersEntity();
+                getUser.setEmail(authRequest.getEmail());
+                getUser.setPassword(passwordEncoder.encode(authRequest.getPassword()));
+                getUser.setToken(jwtService.generateToken(authRequest.getEmail()));
 
+                UsersEntity user = us.updateToken(getUser);
+                log.info(String.valueOf(user.getEmail()), "Sukses Login menggunakan email : " + user.getEmail() + " dan password : " + user.getPassword());
+                return urg.succsesResponse(user, "Sukses Login");
+            }
+            else {
+                throw new UsernameNotFoundException("Invalid user resquest !");
+            }
+        }catch (Exception e){
+            log.warn(String.valueOf(e));
+            return urg.failedResponse(e.getMessage());
+        }
     }
 
     @PostMapping("/Register")
     @Operation(description = "Menambahkan User Tertentu Dari Database")
-    public CommonResponse<UsersEntity> addUsers(@RequestBody UsersEntity param) {
+    public CommonResponse<UsersEntity> addUsers(@RequestBody RegisterRequest param) {
         try {
-            UsersEntity user = us.addUsers(param);
-//            Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
-//            if(authentication.isAuthenticated()) {
-//
-//            }
+            UsersEntity regUser = new UsersEntity();
+            regUser.setEmail(param.getEmail());
+            regUser.setPassword(param.getPassword());
+            regUser.setFull_name(param.getFull_name());
+            regUser.setGender(param.getGender());
+            regUser.setPhone(param.getPhone());
+            regUser.setRoles(param.getRoles());
+            regUser.setToken(jwtService.generateToken(param.getEmail()));
+            UsersEntity user = us.addUsers(regUser);
             log.info(String.valueOf(user), "Sukses Menambahkan Data " + user.getUuid_user());
-            return urg.succsesResponse(user, "Sukses Menambahkan Data " + user.getUuid_user() + " Dengan Token : " + " | "+jwtService.generateToken(user.getEmail()) +" | ");
+            return urg.succsesResponse(user, "Sukses Menambahkan Data");
         } catch (Exception e) {
             log.warn(String.valueOf(e));
             return urg.failedResponse(e.getMessage());
@@ -80,10 +92,11 @@ public class UserController {
         try {
             UsersEntity userReset = new UsersEntity();
             userReset.setEmail(resetPasswordRequest.getEmail());
-            userReset.setPassword(resetPasswordRequest.getPassword());
+            userReset.setPassword(resetPasswordRequest.getNew_password());
+            userReset.setToken(jwtService.generateToken(resetPasswordRequest.getEmail()));
             UsersEntity user = us.resetPassword(userReset.getEmail(),userReset.getPassword());
             log.info(String.valueOf(user), "Password Berhasil Diganti " + user.getUuid_user());
-            return urg.succsesResponse(user, "Paswword Berhasil Diganti " + user.getUuid_user() + " Dengan Token : " + " | "+jwtService.generateToken(user.getEmail()) +" | ");
+            return urg.succsesResponse(user, "Paswword Berhasil Diganti");
         } catch (Exception e) {
             log.warn(String.valueOf(e));
             return urg.failedResponse(e.getMessage());

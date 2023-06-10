@@ -12,11 +12,12 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
-@Table(name = "airports")
-public class AirportsEntity {
+@Table(name = "seats")
+public class SeatsEntity {
     @Id
-    private String iata_code;
-    private String airport_name;
+    private int seats_id;
+    private String seat_number;
+    private String seat_type;
     @JsonIgnore
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime created_at;
@@ -24,5 +25,5 @@ public class AirportsEntity {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @UpdateTimestamp
     private LocalDateTime modified_at;
-    private String city_code;
+
 }

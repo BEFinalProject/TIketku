@@ -1,0 +1,82 @@
+2023-06-10T16:28:28.916+07:00  INFO 7592 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 7592 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-10T16:28:28.921+07:00  INFO 7592 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T16:28:39.820+07:00  INFO 7592 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 11.59 seconds (process running for 12.905)
+2023-06-10T16:34:03.904+07:00  INFO 12136 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 12136 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-10T16:34:03.906+07:00  INFO 12136 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T16:34:10.849+07:00  INFO 12136 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 7.413 seconds (process running for 8.323)
+2023-06-10T16:36:14.026+07:00  INFO 1508 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 1508 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-10T16:36:14.029+07:00  INFO 1508 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T16:36:23.114+07:00  INFO 1508 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 9.632 seconds (process running for 10.796)
+2023-06-10T16:37:24.068+07:00  WARN 1508 --- [http-nio-8080-exec-10] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:42:00.220+07:00  INFO 18756 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 18756 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-10T16:42:00.223+07:00  INFO 18756 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T16:42:08.176+07:00  INFO 18756 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 8.429 seconds (process running for 9.422)
+2023-06-10T16:42:21.189+07:00  WARN 18756 --- [http-nio-8080-exec-1] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:42:22.590+07:00  WARN 18756 --- [http-nio-8080-exec-2] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:45:04.429+07:00  INFO 12448 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 12448 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-10T16:45:04.432+07:00  INFO 12448 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T16:45:12.094+07:00  INFO 12448 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 8.185 seconds (process running for 9.465)
+2023-06-10T16:45:24.365+07:00  WARN 12448 --- [http-nio-8080-exec-1] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:45:44.814+07:00  WARN 12448 --- [http-nio-8080-exec-1] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:46:15.620+07:00  WARN 12448 --- [http-nio-8080-exec-2] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:46:17.290+07:00  WARN 12448 --- [http-nio-8080-exec-3] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:48:43.695+07:00  WARN 12448 --- [http-nio-8080-exec-2] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:52:49.193+07:00  INFO 19600 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 19600 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-10T16:52:49.195+07:00  INFO 19600 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T16:52:56.672+07:00  INFO 19600 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 7.966 seconds (process running for 8.888)
+2023-06-10T16:53:40.472+07:00  INFO 19600 --- [http-nio-8080-exec-10] c.a.t.C.TempTransactionController        : data: TempTransactionEntity(transaction_uid=3fa85f64-5717-4562-b3fc-2c963f66afa6, uuid_user=3fa85f64-5717-4562-b3fc-2c963f66afa6, schedule_uid=3fa85f64-5717-4562-b3fc-2c963f66afa6, seats_id=0, departure_city=null, arrival_city=null, departure_date=null, total_passenger=0, seat_class=null, airplane_name=null, seat_number=null, created_at=null)
+2023-06-10T16:53:40.503+07:00  WARN 19600 --- [http-nio-8080-exec-10] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:54:26.831+07:00  INFO 19600 --- [http-nio-8080-exec-4] c.a.t.C.TempTransactionController        : data: TempTransactionEntity(transaction_uid=3fa85f64-5717-4562-b3fc-2c963f66afa6, uuid_user=3fa85f64-5717-4562-b3fc-2c963f66afa6, schedule_uid=3fa85f64-5717-4562-b3fc-2c963f66afa6, seats_id=1, departure_city=null, arrival_city=null, departure_date=null, total_passenger=2, seat_class=null, airplane_name=null, seat_number=null, created_at=null)
+2023-06-10T16:54:26.834+07:00  WARN 19600 --- [http-nio-8080-exec-4] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null
+2023-06-10T16:57:14.799+07:00  INFO 19600 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 19600 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-10T16:57:14.800+07:00  INFO 19600 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T16:57:16.151+07:00 ERROR 19600 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tempTransactionController' defined in file [D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes\com\arj\tiketkufinalproject\Controller\TempTransactionController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at com.arj.tiketkufinalproject.FinalProjectApplication.main(FinalProjectApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.arj.tiketkufinalproject.Controller.TempTransactionController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@62c6a154]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:740) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:672) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:434) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:415) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:369) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:352) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1083) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/arj/tiketkufinalproject/Service/TempTransactionService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:735) ~[spring-core-6.0.7.jar:6.0.7]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.arj.tiketkufinalproject.Service.TempTransactionService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 31 common frames omitted
+

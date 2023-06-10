@@ -19,10 +19,9 @@ public class CitiesEntity {
     private String city_name;
     @JsonIgnore
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime createdAt;
+    private LocalDateTime created_at;
     @JsonIgnore
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @UpdateTimestamp
-    private LocalDateTime modifiedAt;
-    private String country_code;
+    private LocalDateTime modified_at;
 }

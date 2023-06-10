@@ -30,4 +30,5 @@ public class UsersEntity {
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @UpdateTimestamp
     private LocalDateTime modified_at;
+    private String token;
 }

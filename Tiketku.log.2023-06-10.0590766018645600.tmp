@@ -1,0 +1,75 @@
+2023-06-10T17:04:44.804+07:00  INFO 29808 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 29808 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-10T17:04:44.810+07:00  INFO 29808 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T17:04:56.940+07:00  INFO 29808 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 12.871 seconds (process running for 14.301)
+2023-06-10T17:05:16.982+07:00  INFO 29808 --- [http-nio-8080-exec-10] c.a.t.C.TempTransactionController        : data: TempTransactionEntity(transaction_uid=3fa85f64-5717-4562-b3fc-2c963f66afa6, uuid_user=3fa85f64-5717-4562-b3fc-2c963f66afa6, schedule_uid=3fa85f64-5717-4562-b3fc-2c963f66afa6, seats_id=2, departure_city=null, arrival_city=null, departure_date=null, total_passenger=2, seat_class=null, airplane_name=null, seat_number=null, created_at=null)
+2023-06-10T17:05:17.086+07:00 ERROR 29808 --- [http-nio-8080-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: relation "public.temp_transaction" does not exist
+  Position: 228
+2023-06-10T17:05:17.099+07:00  WARN 29808 --- [http-nio-8080-exec-10] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select t1_0.transaction_uid,t1_0.airplane_name,t1_0.arrival_city,t1_0.created_at,t1_0.departure_city,t1_0.departure_date,t1_0.schedule_uid,t1_0.seat_class,t1_0.seat_number,t1_0.seats_id,t1_0.total_passenger,t1_0.uuid_user from public.temp_transaction t1_0 where t1_0.transaction_uid=?]; SQL [n/a]
+2023-06-10T17:07:36.815+07:00  INFO 29808 --- [http-nio-8080-exec-4] c.a.t.C.TempTransactionController        : data: TempTransactionEntity(transaction_uid=3fa85f64-5717-4562-b3fc-2c963f66afa6, uuid_user=d35f474d-cc6e-41da-b01c-b46b7a4ce236, schedule_uid=6a22d4c8-76aa-4ce5-af65-c91d175eaa0c, seats_id=0, departure_city=null, arrival_city=null, departure_date=null, total_passenger=0, seat_class=null, airplane_name=null, seat_number=null, created_at=null)
+2023-06-10T17:07:36.817+07:00 ERROR 29808 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: relation "public.temp_transaction" does not exist
+  Position: 228
+2023-06-10T17:07:36.818+07:00  WARN 29808 --- [http-nio-8080-exec-4] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select t1_0.transaction_uid,t1_0.airplane_name,t1_0.arrival_city,t1_0.created_at,t1_0.departure_city,t1_0.departure_date,t1_0.schedule_uid,t1_0.seat_class,t1_0.seat_number,t1_0.seats_id,t1_0.total_passenger,t1_0.uuid_user from public.temp_transaction t1_0 where t1_0.transaction_uid=?]; SQL [n/a]
+2023-06-10T17:10:30.847+07:00  INFO 29808 --- [http-nio-8080-exec-9] c.a.t.C.TempTransactionController        : data: TempTransactionEntity(transaction_uid=3fa85f64-5717-4562-b3fc-2c963f66afa6, uuid_user=d35f474d-cc6e-41da-b01c-b46b7a4ce236, schedule_uid=6a22d4c8-76aa-4ce5-af65-c91d175eaa0c, seats_id=0, departure_city=null, arrival_city=null, departure_date=null, total_passenger=0, seat_class=null, airplane_name=null, seat_number=null, created_at=null)
+2023-06-10T17:10:30.848+07:00 ERROR 29808 --- [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : ERROR: relation "public.temp_transaction" does not exist
+  Position: 228
+2023-06-10T17:10:30.849+07:00  WARN 29808 --- [http-nio-8080-exec-9] c.a.t.C.TempTransactionController        : org.springframework.dao.InvalidDataAccessResourceUsageException: JDBC exception executing SQL [select t1_0.transaction_uid,t1_0.airplane_name,t1_0.arrival_city,t1_0.created_at,t1_0.departure_city,t1_0.departure_date,t1_0.schedule_uid,t1_0.seat_class,t1_0.seat_number,t1_0.seats_id,t1_0.total_passenger,t1_0.uuid_user from public.temp_transaction t1_0 where t1_0.transaction_uid=?]; SQL [n/a]
+2023-06-10T17:12:27.728+07:00  INFO 29808 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 29808 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-10T17:12:27.729+07:00  INFO 29808 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-10T17:12:28.386+07:00 ERROR 29808 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.TypeNotPresentException: Type com.arj.tiketkufinalproject.Model.TempTransactionEntity not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95) ~[na:na]
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211) ~[na:na]
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:500) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:448) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.data.util.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:250) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.util.ClassTypeInformation.getSuperTypeInformation(ClassTypeInformation.java:36) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.util.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:327) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:77) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:91) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:163) ~[spring-data-commons-3.0.4.jar:3.0.4]
+	at org.springframework.boot.autoconfigure.data.AbstractRepositoryConfigurationSourceSupport.registerBeanDefinitions(AbstractRepositoryConfigurationSourceSupport.java:62) ~[spring-boot-autoconfigure-3.0.5.jar:3.0.5]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:373) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:372) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:410) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:283) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:344) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:115) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:747) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:565) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at com.arj.tiketkufinalproject.FinalProjectApplication.main(FinalProjectApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: java.lang.ClassNotFoundException: com.arj.tiketkufinalproject.Model.TempTransactionEntity
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114) ~[na:na]
+	... 41 common frames omitted
+

@@ -19,6 +19,8 @@ public class UsersService {
     private UsersRepository R;
     @Autowired
     private PasswordEncoder passwordEncoder;
+    @Autowired
+    private JwtService jwtService;
 
     public Page<UsersEntity> getAll(int pageNumber, int pageSize){
         Pageable pageable = PageRequest.of(pageNumber, pageSize);
@@ -40,11 +42,20 @@ public class UsersService {
         userExist.setModified_at(currentDateTime);
         return R.save(userExist);
     }
+    public UsersEntity updateToken(UsersEntity param){
+        UsersEntity userExist =  R.findByEmail(param.getEmail()).get();
+        userExist.setToken(jwtService.generateToken(param.getEmail()));
+        return R.save(userExist);
+    }
 
     public UsersEntity addUsers(UsersEntity param) {
-        Optional<UsersEntity> userExist = R.findByEmail(param.getEmail());
-        if (userExist.isPresent()) {
+        Optional<UsersEntity> userEmailExist = R.findByEmail(param.getEmail());
+        Optional<UsersEntity> userPhoneExist = R.findByPhone(param.getPhone());
+        if (userEmailExist.isPresent()) {
             throw new RuntimeException("Username " + param.getEmail() + " Sudah Ada");
+        }
+        if(userPhoneExist.isPresent()){
+            throw new RuntimeException("Nomer Telepon " + param.getPhone() + " Sudah Ada");
         }
 
         LocalDateTime currentDateTime = LocalDateTime.now();
@@ -86,6 +97,9 @@ public class UsersService {
     public UsersEntity resetPassword(String email, String newPassword) {
         UsersEntity user = R.findByEmail(email)
                 .orElseThrow(() -> new RuntimeException("User dengan username " + email + " tidak ditemukan"));
+        UsersEntity userExist =  R.findByEmail(email).get();
+        userExist.setToken(jwtService.generateToken(userExist.getEmail()));
+        R.save(userExist);
 
         // Memeriksa apakah password baru sama dengan password sebelumnya
         if (passwordEncoder.matches(newPassword, user.getPassword())) {

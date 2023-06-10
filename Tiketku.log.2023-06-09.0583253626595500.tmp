@@ -1,0 +1,3 @@
+2023-06-09T21:49:40.379+07:00  INFO 2736 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 2736 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-09T21:49:40.385+07:00  INFO 2736 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-09T21:49:48.027+07:00  INFO 2736 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 8.237 seconds (process running for 9.338)
