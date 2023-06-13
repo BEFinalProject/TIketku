@@ -12,7 +12,6 @@ import java.util.Optional;
 public class AirportsService {
     @Autowired
     AirportsRepository airportsRepository;
-
     private LocalDateTime currentDateTime = LocalDateTime.now();
 
     public AirportsEntity addAirport(AirportsEntity param){
