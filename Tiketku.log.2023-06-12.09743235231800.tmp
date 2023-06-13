@@ -1,0 +1,116 @@
+2023-06-12T18:44:23.646+07:00  INFO 11940 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 11940 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-12T18:44:23.651+07:00  INFO 11940 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-12T18:44:33.447+07:00  INFO 11940 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 10.334 seconds (process running for 11.489)
+2023-06-12T18:45:24.500+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 11360 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-12T18:45:24.503+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-12T18:45:34.081+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 10.164 seconds (process running for 11.206)
+2023-06-12T18:49:04.414+07:00  INFO 11360 --- [http-nio-8080-exec-7] c.a.t.C.TempTransactionController        : TempAddTransactionResponse(uuid_user=9ec6d4d8-48bf-4ab5-b1b2-e9ed02a4eec8, schedule_uid=6fdfed84-8098-4f2f-b9e6-2a05802b2356, seats_id=1, total_passenger=1, airplane_name=Garuda, id_price=1)
+2023-06-12T18:49:04.589+07:00  WARN 11360 --- [http-nio-8080-exec-7] c.a.t.C.TempTransactionController        : java.lang.RuntimeException: Seat number and Airplane u chose already exist. Cannot save the transaction.
+2023-06-12T18:49:58.959+07:00  INFO 11360 --- [http-nio-8080-exec-9] c.a.t.C.TempTransactionController        : TempAddTransactionResponse(uuid_user=9ec6d4d8-48bf-4ab5-b1b2-e9ed02a4eec8, schedule_uid=6fdfed84-8098-4f2f-b9e6-2a05802b2356, seats_id=3, total_passenger=1, airplane_name=Garuda, id_price=1)
+2023-06-12T19:01:00.299+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 11360 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-12T19:01:00.299+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-12T19:01:02.610+07:00 ERROR 11360 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'historyTransactionController' defined in file [D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes\com\arj\tiketkufinalproject\Controller\HistoryTransactionController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at com.arj.tiketkufinalproject.FinalProjectApplication.main(FinalProjectApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.arj.tiketkufinalproject.Controller.HistoryTransactionController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@183cf8e8]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:740) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:672) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:434) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:415) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:369) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:352) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1083) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/arj/tiketkufinalproject/Service/HistoryTransactionService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:735) ~[spring-core-6.0.7.jar:6.0.7]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.arj.tiketkufinalproject.Service.HistoryTransactionService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 31 common frames omitted
+
+2023-06-12T19:01:05.222+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 11360 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-12T19:01:05.223+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-12T19:01:10.366+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 5.222 seconds (process running for 947.492)
+2023-06-12T19:01:11.264+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 11360 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-12T19:01:11.264+07:00  INFO 11360 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-12T19:01:12.791+07:00 ERROR 11360 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'historyTransactionController' defined in file [D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes\com\arj\tiketkufinalproject\Controller\HistoryTransactionController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at com.arj.tiketkufinalproject.FinalProjectApplication.main(FinalProjectApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.arj.tiketkufinalproject.Controller.HistoryTransactionController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@57d25021]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:740) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:672) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:434) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:415) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:369) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:352) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1083) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/arj/tiketkufinalproject/Service/HistoryTransactionService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:735) ~[spring-core-6.0.7.jar:6.0.7]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.arj.tiketkufinalproject.Service.HistoryTransactionService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 31 common frames omitted
+

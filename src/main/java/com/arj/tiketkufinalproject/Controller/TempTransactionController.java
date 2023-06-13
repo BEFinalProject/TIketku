@@ -1,9 +1,11 @@
 package com.arj.tiketkufinalproject.Controller;
 
+import com.arj.tiketkufinalproject.Model.HistoryTransactionEntity;
 import com.arj.tiketkufinalproject.Model.TempTransactionEntity;
 import com.arj.tiketkufinalproject.Response.CommonResponse;
 import com.arj.tiketkufinalproject.Response.CommonResponseGenerator;
 import com.arj.tiketkufinalproject.Response.TempAddTransactionResponse;
+import com.arj.tiketkufinalproject.Service.HistoryTransactionService;
 import com.arj.tiketkufinalproject.Service.TempTransactionService;
 import io.swagger.annotations.Api;
 import io.swagger.v3.oas.annotations.Operation;
@@ -24,6 +26,8 @@ public class TempTransactionController {
     TempTransactionService tempTransactionService;
     @Autowired
     CommonResponseGenerator commonResponseGenerator;
+    @Autowired
+    HistoryTransactionService historyTransactionService;
 
     @PostMapping(value = "/addTempTamperedTransaction")
     @Operation(description = "")
@@ -38,7 +42,14 @@ public class TempTransactionController {
             tempTransaction.setId_price(param.getId_price());
             log.info(String.valueOf(param));
             TempTransactionEntity transactionEntity =tempTransactionService.addTransaction(tempTransaction);
-            return commonResponseGenerator.succsesResponse(transactionEntity, "Sukses Menambahkan Data");
+
+            HistoryTransactionEntity historyTransaction = new HistoryTransactionEntity();
+            historyTransaction.setTransaction_uid(transactionEntity.getTransaction_uid());
+            historyTransaction.setHistory_transaction_uid(historyTransactionService.generateUUID());
+            log.info(String.valueOf(historyTransaction));
+            HistoryTransactionEntity saveHistory = historyTransactionService.saveDataHistory(historyTransaction);
+
+            return commonResponseGenerator.succsesResponse(saveHistory, "Sukses Menambahkan Data");
         } catch (Exception e) {
             log.warn(String.valueOf(e));
             return commonResponseGenerator.failedResponse(e.getMessage());
