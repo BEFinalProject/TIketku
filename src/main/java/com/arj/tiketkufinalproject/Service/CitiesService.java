@@ -15,6 +15,7 @@ import java.util.Optional;
 public class CitiesService {
     @Autowired
     CitiesRepository citiesRepository;
+    private LocalDateTime currentDateTime = LocalDateTime.now();
 
 
     public CitiesEntity getByCityDepartureAndArrival(String departure_city, String arrival_city) {
@@ -33,9 +34,8 @@ public class CitiesService {
         if(cityExsist.isPresent()){
             throw new RuntimeException("Film Code " + param.getCity_code() + " Sudah Ada");
         }
-        else {
-            return citiesRepository.save(param);
-        }
+        param.setCreated_at(currentDateTime);
+        return citiesRepository.save(param);
     }
 
     public List<CitiesEntity> addMultipleCity(List<CitiesEntity> param){
@@ -52,7 +52,6 @@ public class CitiesService {
     }
 
     public CitiesEntity updateCity(CitiesEntity param){
-        LocalDateTime currentDateTime = LocalDateTime.now();
         CitiesEntity updateCity = citiesRepository.findById(param.getCity_code()).get();
         updateCity.setCity_name(param.getCity_name());
         updateCity.setModified_at(currentDateTime);

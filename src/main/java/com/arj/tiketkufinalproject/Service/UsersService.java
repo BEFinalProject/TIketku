@@ -52,7 +52,7 @@ public class UsersService {
         Optional<UsersEntity> userEmailExist = R.findByEmail(param.getEmail());
         Optional<UsersEntity> userPhoneExist = R.findByPhone(param.getPhone());
         if (userEmailExist.isPresent()) {
-            throw new RuntimeException("Username " + param.getEmail() + " Sudah Ada");
+            throw new RuntimeException("Email " + param.getEmail() + " Sudah Ada");
         }
         if(userPhoneExist.isPresent()){
             throw new RuntimeException("Nomer Telepon " + param.getPhone() + " Sudah Ada");
