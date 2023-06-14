@@ -92,8 +92,8 @@ public class TempTransactionService {
 
         LocalDateTime currentDateTime = LocalDateTime.now();
         UsersEntity users = usersRepository.getReferenceById(tempTransaction.getUuid_user());
-        SchedulesEntity schedules = schedulesRepository.getReferenceById(tempTransaction.getSchedule_uid());
         SeatsEntity seats = seatsRepository.getReferenceById(tempTransaction.getSeats_id());
+        SchedulesEntity schedules = schedulesRepository.getReferenceById(tempTransaction.getSchedule_uid());
         AirplanesEntity airplanes = airplaneRepository.getReferenceById(tempTransaction.getAirplane_name());
         PriceEntity price = priceRepository.getReferenceById(tempTransaction.getId_price());
 //        SeatsEntity seatExsist = seatsRepository.getByStudioSeat(transaction.getStudio_name(), transaction.getNomor_kursi());
@@ -123,6 +123,27 @@ public class TempTransactionService {
         return tempTransactionRepository.save(transactionExist);
 
 
+    }
+
+    public TempTransactionEntity updateTempData(TempTransactionEntity tempTransaction){
+        TempTransactionEntity updatedTempData = tempTransactionRepository.findById(tempTransaction.getTransaction_uid()).get();
+        updatedTempData.setTitle(tempTransaction.getTitle());
+        updatedTempData.setFull_name(tempTransaction.getFull_name());
+        updatedTempData.setGiven_name(tempTransaction.getGiven_name());
+        updatedTempData.setBirth_date(tempTransaction.getBirth_date());
+        updatedTempData.setId_card(tempTransaction.getId_card());
+        updatedTempData.setValid_until(tempTransaction.getDeparture_date());
+        return tempTransactionRepository.save(updatedTempData);
+    }
+
+    public TempTransactionEntity cancelOrder(TempTransactionEntity tempTransaction){
+        TempTransactionEntity updatedTempData = tempTransactionRepository.findById(tempTransaction.getTransaction_uid()).get();
+        return tempTransactionRepository.save(updatedTempData);
+    }
+
+    public TempTransactionEntity refundOrder(TempTransactionEntity tempTransaction){
+
+        return null;
     }
 
     public List<TempTransactionEntity> search(

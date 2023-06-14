@@ -13,8 +13,7 @@ import java.util.UUID;
 @Table(name = "history_transaction")
 public class HistoryTransactionEntity {
     @Id
-    private UUID history_transaction_uid;
-    private UUID transaction_uid;
+    private UUID history_uid;
     private UUID uuid_users;
     private String departure_city;
     private String arrival_city;
@@ -23,4 +22,10 @@ public class HistoryTransactionEntity {
     private String airplane_name;
     private String seat_number;
     private String statues;
+    private String title;
+    private String full_name;
+    private String given_name;
+    private Date birth_date;
+    private String id_card;
+    private Date valid_until;
 }

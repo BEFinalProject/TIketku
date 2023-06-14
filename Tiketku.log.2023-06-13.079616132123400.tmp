@@ -1,0 +1,2 @@
+2023-06-13T11:26:40.163+07:00  INFO 23632 --- [http-nio-8080-exec-4] c.a.t.Controller.AirplanesController     : AirplanesEntity(airplane_name=Batik Air, airplane_type=Boing boing, created_at=2023-06-13T11:25:47.509642, modified_at=2023-06-13T11:26:25.949242)
+2023-06-13T11:26:52.401+07:00  INFO 23632 --- [http-nio-8080-exec-5] c.a.t.Controller.AirplanesController     : AirplanesEntity(airplane_name=Batik Air, airplane_type=Boeing 737, created_at=2023-06-13T11:25:47.509641900, modified_at=2023-06-13T11:26:52.399700500)

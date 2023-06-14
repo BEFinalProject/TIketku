@@ -1,0 +1,66 @@
+2023-06-14T19:25:43.502+07:00  INFO 19084 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 19084 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-14T19:25:43.507+07:00  INFO 19084 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-14T19:25:47.347+07:00  INFO 19084 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 3.896 seconds (process running for 467.479)
+A2023-06-14T19:26:42.707+07:00  INFO 19084 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 19084 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-14T19:26:42.708+07:00  INFO 19084 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-14T19:26:47.678+07:00  INFO 19084 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 5.005 seconds (process running for 527.809)
+2023-06-14T19:33:11.257+07:00  INFO 23432 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 23432 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-14T19:33:11.260+07:00  INFO 23432 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-14T19:33:19.800+07:00  INFO 23432 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 9.034 seconds (process running for 10.081)
+2023-06-14T19:35:04.258+07:00  INFO 23432 --- [http-nio-8080-exec-10] c.a.t.C.TempTransactionController        : HistoryTransactionEntity(history_transaction_uid=null, transaction_uid=395ed14b-4762-4343-be3c-8ba9179c5e84, uuid_users=null, departure_city=null, arrival_city=null, departure_date=null, seat_class=null, airplane_name=null, seat_number=null, statues=null, title=null, full_name=null, given_name=null, birth_date=null, id_card=null, valid_until=null)
+2023-06-14T19:35:04.272+07:00  WARN 23432 --- [http-nio-8080-exec-10] c.a.t.C.TempTransactionController        : org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.arj.tiketkufinalproject.Model.HistoryTransactionEntity
+2023-06-14T19:37:38.562+07:00  INFO 23432 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 23432 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-14T19:37:38.563+07:00  INFO 23432 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-14T19:37:40.580+07:00 ERROR 23432 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'historyTransactionController' defined in file [D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes\com\arj\tiketkufinalproject\Controller\HistoryTransactionController.class]: Post-processing of merged bean definition failed
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.5.jar:3.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.5.jar:3.0.5]
+	at com.arj.tiketkufinalproject.FinalProjectApplication.main(FinalProjectApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.arj.tiketkufinalproject.Controller.HistoryTransactionController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@443a126b]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:740) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:672) ~[spring-core-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:434) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:415) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findInjectionMetadata(PersistenceAnnotationBeanPostProcessor.java:369) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:352) ~[spring-orm-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1083) ~[spring-beans-6.0.7.jar:6.0.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572) ~[spring-beans-6.0.7.jar:6.0.7]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/arj/tiketkufinalproject/Service/HistoryTransactionService
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:735) ~[spring-core-6.0.7.jar:6.0.7]
+	... 27 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.arj.tiketkufinalproject.Service.HistoryTransactionService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.0.5.jar:3.0.5]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 31 common frames omitted
+
+2023-06-14T19:37:42.053+07:00  INFO 23432 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 23432 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-14T19:37:42.054+07:00  INFO 23432 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-14T19:37:46.181+07:00  INFO 23432 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 4.169 seconds (process running for 276.462)
