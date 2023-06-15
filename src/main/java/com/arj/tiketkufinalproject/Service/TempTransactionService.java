@@ -16,7 +16,6 @@ import java.util.UUID;
 public class TempTransactionService {
     @Autowired
     TempTransactionRepository tempTransactionRepository;
-
     @Autowired
     SchedulesRepository schedulesRepository;
     @Autowired
@@ -28,67 +27,7 @@ public class TempTransactionService {
     @Autowired
     PriceRepository priceRepository;
 
-//    public TempTransactionEntity addUsers1(TempTransactionEntity theTransaction) {
-//
-//        SchedulesEntity theSchedule = schedulesRepository.getReferenceById(theTransaction.getSchedule_uid());
-//        SeatsEntity theSeat = seatsRepository.getReferenceById(theTransaction.getSeats_id());
-//        AirplanesEntity theAirplane = airplaneRepository.getReferenceById(theTransaction.getAirplane_name());
-//
-//        TempTransactionEntity tempTransaction = tempTransactionRepository.findById(theTransaction.getTransaction_uid()).orElse(null);
-//
-//
-//
-//        return tempTransactionRepository.save(
-//                new TempTransactionEntity(
-//                        generateUUID(),
-//                        theTransaction.getUuid_user(),
-//                        theTransaction.getSchedule_uid(),
-//                        theTransaction.getSeats_id(),
-//                        theSchedule.getDeparture_city(),
-//                        theSchedule.getArrival_city(),
-//                        theTransaction.getDeparture_date(),
-//                        theTransaction.getTotal_passenger(),
-//                        theSeat.getSeat_type(),
-//                        theAirplane.getAirplane_name(),
-//                        theSeat.getSeat_number(),
-//                        LocalDateTime.now()
-//                        )
-//        );
-//    }
-
     public TempTransactionEntity addTransaction(TempTransactionEntity tempTransaction) {
-//        Optional<SeatsEntity> seatExist = seatsRepository.findSeats(tempTransaction.getSeat_number());
-//        Optional<AirplanesEntity> airplaneExist = airplaneRepository.findAirplanes(tempTransaction.getAirplane_name());
-//        int maxCount = seatsRepository.getTotalRows();
-//        if (seatExist.isPresent() && airplaneExist.isPresent()) {
-//            throw new RuntimeException("Seat " +tempTransaction.getSeat_number()+ " dan Airplane  " + tempTransaction.getAirplane_name() + " Sudah ada");
-//        }
-
-
-        //TempTransactionEntity tempTransaction = new TempTransactionEntity();
-//        UsersEntity user = new UsersEntity();
-//        SchedulesEntity schedulesEntity = new SchedulesEntity();
-//        SeatsEntity seatsEntity = new SeatsEntity();
-//        CitiesEntity citiesEntity = new CitiesEntity();
-//        LocalDateTime currentDateTime = LocalDateTime.now();
-//        tempTransaction.setTransaction_uid(generateUUID());
-//        tempTransaction.setUuid_user(user.getUuid_user());
-//        tempTransaction.setSchedule_uid(schedulesEntity.getSchedule_uid());
-//        tempTransaction.setSeats_id(seatsEntity.getSeats_id());
-//        tempTransaction.setDeparture_city(citiesEntity.getCity_name());
-//        tempTransaction.setArrival_city(citiesEntity.getCity_name());
-//        tempTransaction.setDeparture_date(schedulesEntity.getDeparture_date());
-//        tempTransaction.setTotal_passenger(tempTransaction.getTotal_passenger());
-//        tempTransaction.setSeat_class(seatsEntity.getSeat_type());
-//        tempTransaction.setAirplane_name(tempTransaction.getAirplane_name());
-//        tempTransaction.setSeat_number(tempTransaction.getSeat_number());
-//        tempTransaction.setCreated_at(currentDateTime);
-//
-//        if (maxCount >= tempTransaction.getTotal_passenger() && !seatExist.isPresent() && !airplaneExist.isPresent()) {
-//            return tempTransactionRepository.save(tempTransaction);
-//        } else {
-//            return null;
-//        }
 
         LocalDateTime currentDateTime = LocalDateTime.now();
         UsersEntity users = usersRepository.getReferenceById(tempTransaction.getUuid_user());
@@ -144,6 +83,14 @@ public class TempTransactionService {
     public TempTransactionEntity refundOrder(TempTransactionEntity tempTransaction){
 
         return null;
+    }
+
+    public void truncate(){
+        tempTransactionRepository.deleteAll();
+    }
+
+    public void deleteByStatusUnpaid(){
+        tempTransactionRepository.deleteByStatusUnpaid();
     }
 
     public List<TempTransactionEntity> search(
