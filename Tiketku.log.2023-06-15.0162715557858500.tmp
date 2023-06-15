@@ -1,0 +1,108 @@
+2023-06-15T17:19:32.148+07:00  INFO 19756 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 11.373 seconds (process running for 12.7)
+2023-06-15T17:20:33.127+07:00  INFO 19756 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 19756 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-15T17:20:33.128+07:00  INFO 19756 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-15T17:20:38.387+07:00  INFO 19756 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 5.295 seconds (process running for 78.939)
+2023-06-15T17:21:01.772+07:00  INFO 18092 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 18092 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-15T17:21:01.776+07:00  INFO 18092 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-15T17:21:11.116+07:00  INFO 18092 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 9.929 seconds (process running for 11.024)
+2023-06-15T17:24:25.262+07:00  INFO 21104 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 21104 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-15T17:24:25.265+07:00  INFO 21104 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-15T17:24:34.731+07:00  INFO 21104 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 10.024 seconds (process running for 11.224)
+2023-06-15T17:51:06.401+07:00  INFO 7808 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 7808 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-15T17:51:06.406+07:00  INFO 7808 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-15T17:51:16.078+07:00  INFO 7808 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 10.333 seconds (process running for 11.653)
+2023-06-15T17:51:18.174+07:00 ERROR 7808 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.ClassCastException: class java.time.LocalDateTime cannot be cast to class com.arj.tiketkufinalproject.Model.TempTransactionEntity (java.time.LocalDateTime is in module java.base of loader 'bootstrap'; com.arj.tiketkufinalproject.Model.TempTransactionEntity is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @b1cbee0)
+	at jdk.proxy4/jdk.proxy4.$Proxy150.selectCreatedat(Unknown Source) ~[na:na]
+	at com.arj.tiketkufinalproject.Service.TempTransactionService.searchCreatedAt(TempTransactionService.java:97) ~[classes/:na]
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.Schedule(Schedule.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-15T17:51:19.182+07:00 ERROR 7808 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.ClassCastException: class java.time.LocalDateTime cannot be cast to class com.arj.tiketkufinalproject.Model.TempTransactionEntity (java.time.LocalDateTime is in module java.base of loader 'bootstrap'; com.arj.tiketkufinalproject.Model.TempTransactionEntity is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @b1cbee0)
+	at jdk.proxy4/jdk.proxy4.$Proxy150.selectCreatedat(Unknown Source) ~[na:na]
+	at com.arj.tiketkufinalproject.Service.TempTransactionService.searchCreatedAt(TempTransactionService.java:97) ~[classes/:na]
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.Schedule(Schedule.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-15T17:51:20.185+07:00 ERROR 7808 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.ClassCastException: class java.time.LocalDateTime cannot be cast to class com.arj.tiketkufinalproject.Model.TempTransactionEntity (java.time.LocalDateTime is in module java.base of loader 'bootstrap'; com.arj.tiketkufinalproject.Model.TempTransactionEntity is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @b1cbee0)
+	at jdk.proxy4/jdk.proxy4.$Proxy150.selectCreatedat(Unknown Source) ~[na:na]
+	at com.arj.tiketkufinalproject.Service.TempTransactionService.searchCreatedAt(TempTransactionService.java:97) ~[classes/:na]
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.Schedule(Schedule.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-15T17:51:21.190+07:00 ERROR 7808 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.ClassCastException: class java.time.LocalDateTime cannot be cast to class com.arj.tiketkufinalproject.Model.TempTransactionEntity (java.time.LocalDateTime is in module java.base of loader 'bootstrap'; com.arj.tiketkufinalproject.Model.TempTransactionEntity is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @b1cbee0)
+	at jdk.proxy4/jdk.proxy4.$Proxy150.selectCreatedat(Unknown Source) ~[na:na]
+	at com.arj.tiketkufinalproject.Service.TempTransactionService.searchCreatedAt(TempTransactionService.java:97) ~[classes/:na]
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.Schedule(Schedule.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-15T17:51:22.192+07:00 ERROR 7808 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.ClassCastException: class java.time.LocalDateTime cannot be cast to class com.arj.tiketkufinalproject.Model.TempTransactionEntity (java.time.LocalDateTime is in module java.base of loader 'bootstrap'; com.arj.tiketkufinalproject.Model.TempTransactionEntity is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @b1cbee0)
+	at jdk.proxy4/jdk.proxy4.$Proxy150.selectCreatedat(Unknown Source) ~[na:na]
+	at com.arj.tiketkufinalproject.Service.TempTransactionService.searchCreatedAt(TempTransactionService.java:97) ~[classes/:na]
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.Schedule(Schedule.java:33) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+

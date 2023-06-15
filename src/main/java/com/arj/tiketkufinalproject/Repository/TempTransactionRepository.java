@@ -37,6 +37,9 @@ public interface TempTransactionRepository extends JpaRepository<TempTransaction
     @Query("DELETE FROM TempTransactionEntity t WHERE t.transaction_uid IN (SELECT t.transaction_uid FROM TempTransactionEntity t INNER JOIN HistoryTransactionEntity h ON t.transaction_uid = h.history_uid WHERE h.statues = 'Unpaid')")
     TempTransactionEntity deleteByStatusUnpaid();
 
+    @Query("SELECT t.created_at From TempTransactionEntity t")
+    TempTransactionEntity selectCreatedat();
+
 //    @Query("SELECT t from TempTransactionEntity t where t.departure_city = :departure_city AND t.arrival_city = :arrival_city AND t.departure_date = :departure_date")
 //    List<TempTransactionEntity> searching(@Param("departure_city") String departure_city, @Param("arrival_city") String arrival_city, @Param("departure_date") Date departure_date);
 

@@ -29,6 +29,14 @@ public class HistoryTransactionService {
         return historyTransactionRepository.findByUUIDUsers(uuid_users);
     }
 
+    public List<HistoryTransactionEntity> searchHistoryByDateAndUUIDUsers(Date departure_date, UUID uuid_users){
+        return historyTransactionRepository.findByDepartureDate(departure_date, uuid_users);
+    }
+
+    public List<HistoryTransactionEntity> searchHistoryByUUIDUserAndHistory(UUID uuid_users, UUID history_uid){
+        return historyTransactionRepository.findByUUIDUserAndHistory(uuid_users, history_uid);
+    }
+
     public UUID generateUUID() {
         return UUID.randomUUID();
     }

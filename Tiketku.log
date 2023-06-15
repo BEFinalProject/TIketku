@@ -1,27 +1,73 @@
-2023-06-15T16:42:33.300+07:00  INFO 11544 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 11544 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
-2023-06-15T16:42:33.305+07:00  INFO 11544 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2023-06-15T16:42:41.691+07:00  INFO 11544 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 8.886 seconds (process running for 10.007)
-2023-06-15T16:46:51.200+07:00  INFO 7908 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 7908 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
-2023-06-15T16:46:51.204+07:00  INFO 7908 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2023-06-15T16:46:59.048+07:00  INFO 7908 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 8.353 seconds (process running for 9.302)
-2023-06-15T16:53:26.669+07:00  INFO 19420 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 19420 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
-2023-06-15T16:53:26.672+07:00  INFO 19420 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2023-06-15T16:53:36.049+07:00  INFO 19420 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 9.958 seconds (process running for 11.103)
-2023-06-15T16:57:55.063+07:00  INFO 20872 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 20872 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
-2023-06-15T16:57:55.067+07:00  INFO 20872 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2023-06-15T16:58:04.156+07:00  INFO 20872 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 9.861 seconds (process running for 11.335)
-2023-06-15T16:58:49.107+07:00  INFO 16008 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 16008 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
-2023-06-15T16:58:49.110+07:00  INFO 16008 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2023-06-15T16:58:57.039+07:00  INFO 16008 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 8.43 seconds (process running for 9.357)
-2023-06-15T17:04:26.456+07:00  INFO 24308 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 24308 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
-2023-06-15T17:04:26.460+07:00  INFO 24308 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2023-06-15T17:04:36.456+07:00  INFO 24308 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 10.65 seconds (process running for 11.912)
-2023-06-15T17:05:22.331+07:00  INFO 7664 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 7664 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
-2023-06-15T17:05:22.334+07:00  INFO 7664 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2023-06-15T17:05:31.677+07:00  INFO 7664 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 9.871 seconds (process running for 11.217)
-2023-06-15T17:06:50.078+07:00  INFO 7664 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 7664 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
-2023-06-15T17:06:50.079+07:00  INFO 7664 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2023-06-15T17:06:56.284+07:00  INFO 7664 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 6.256 seconds (process running for 95.825)
-2023-06-15T17:06:57.032+07:00  INFO 7664 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 7664 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
-2023-06-15T17:06:57.032+07:00  INFO 7664 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
-2023-06-15T17:07:01.108+07:00  INFO 7664 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 4.186 seconds (process running for 100.648)
+2023-06-15T18:53:25.316+07:00  INFO 23116 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 23116 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-15T18:53:25.322+07:00  INFO 23116 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-15T18:53:33.041+07:00  INFO 23116 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 8.226 seconds (process running for 9.192)
+2023-06-15T18:53:35.040+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:36.043+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:37.044+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:38.046+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:39.048+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:40.050+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:41.051+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:42.052+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:43.073+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:44.075+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:45.076+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:46.080+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:47.081+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:48.082+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:49.083+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:50.084+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:51.085+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:52.087+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:53.089+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:54.090+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:55.091+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:56.092+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:57.094+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:58.096+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:53:59.098+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:00.121+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:01.125+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:02.126+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:03.128+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:03.510+07:00  INFO 23116 --- [http-nio-8080-exec-10] c.a.t.C.HistoryTransactionController     : [HistoryTransactionEntity(history_uid=fbda41ad-4f40-4b68-8715-b78e3b5033eb, uuid_users=9ec6d4d8-48bf-4ab5-b1b2-e9ed02a4eec8, departure_city=Semarang, arrival_city=Jakarta, departure_date=2023-06-06, seat_class=First Class, airplane_name=Batik Air, seat_number=A02, statues=Unpaid, title=null, full_name=null, given_name=null, birth_date=null, id_card=null, valid_until=null)]
+2023-06-15T18:54:04.130+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:05.132+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:06.133+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:07.134+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:08.136+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:09.137+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:10.138+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:11.140+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:12.142+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:13.150+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:14.152+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:15.154+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:16.156+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:17.157+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:18.159+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:19.161+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:20.162+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:21.164+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:22.165+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:23.166+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:24.168+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:25.170+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:26.172+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:27.174+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:28.175+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:29.177+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:30.178+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:31.222+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:32.224+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:33.226+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:34.227+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:35.230+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:36.231+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:37.233+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:38.234+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:39.237+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:40.238+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:41.239+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:42.243+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null
+2023-06-15T18:54:43.248+07:00  INFO 23116 --- [scheduling-1] c.a.t.Scheduler.Schedule                 : null

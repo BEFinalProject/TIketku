@@ -93,6 +93,9 @@ public class TempTransactionService {
         tempTransactionRepository.deleteByStatusUnpaid();
     }
 
+    public void searchCreatedAt(){
+        tempTransactionRepository.selectCreatedat();
+    }
     public List<TempTransactionEntity> search(
             String departure_city, String arrival_city, Date departure_date,
             int total_passanger,String seat_type){

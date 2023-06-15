@@ -1,0 +1,94 @@
+2023-06-15T17:53:02.414+07:00  INFO 27136 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 27136 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-15T17:53:02.419+07:00  INFO 27136 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-15T17:53:11.670+07:00  INFO 27136 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 9.814 seconds (process running for 10.875)
+2023-06-15T18:02:09.592+07:00  INFO 21588 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 21588 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-15T18:02:09.595+07:00  INFO 21588 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-15T18:02:19.103+07:00  INFO 21588 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 10.062 seconds (process running for 11.64)
+2023-06-15T18:02:21.101+07:00 ERROR 21588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.time.LocalDateTime.atZone(java.time.ZoneId)" because "localDateTime" is null
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.schedule(Schedule.java:137) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-15T18:02:22.106+07:00 ERROR 21588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.time.LocalDateTime.atZone(java.time.ZoneId)" because "localDateTime" is null
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.schedule(Schedule.java:137) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-15T18:02:23.108+07:00 ERROR 21588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.time.LocalDateTime.atZone(java.time.ZoneId)" because "localDateTime" is null
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.schedule(Schedule.java:137) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-15T18:02:24.111+07:00 ERROR 21588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.time.LocalDateTime.atZone(java.time.ZoneId)" because "localDateTime" is null
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.schedule(Schedule.java:137) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-15T18:02:25.113+07:00 ERROR 21588 --- [scheduling-1] o.s.s.s.TaskUtils$LoggingErrorHandler    : Unexpected error occurred in scheduled task
+
+java.lang.NullPointerException: Cannot invoke "java.time.LocalDateTime.atZone(java.time.ZoneId)" because "localDateTime" is null
+	at com.arj.tiketkufinalproject.Scheduler.Schedule.schedule(Schedule.java:137) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84) ~[spring-context-6.0.7.jar:6.0.7]
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54) ~[spring-context-6.0.7.jar:6.0.7]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-06-15T18:08:27.876+07:00  INFO 12528 --- [restartedMain] c.a.t.FinalProjectApplication            : Starting FinalProjectApplication using Java 17.0.2 with PID 12528 (D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment\target\classes started by ARJ in D:\Materi Kuliah\!Binar Academy MSIB\Ch-8-9 Final Project\TestDevelopment)
+2023-06-15T18:08:27.879+07:00  INFO 12528 --- [restartedMain] c.a.t.FinalProjectApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-06-15T18:08:37.142+07:00  INFO 12528 --- [restartedMain] c.a.t.FinalProjectApplication            : Started FinalProjectApplication in 9.879 seconds (process running for 11.168)

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -26,11 +27,37 @@ public class HistoryTransactionController {
     @Autowired
     CommonResponseGenerator commonResponseGenerator;
 
-    @GetMapping(value = "/{uuid_users}")
+    @GetMapping(value = "/user/{uuid_users}")
     @Operation(description = "Menampilkan Users Transaksi")
     public CommonResponse<List<HistoryTransactionEntity>> getHistory(@PathVariable UUID uuid_users){
         try {
             List<HistoryTransactionEntity> historyTransaction = historyTransactionService.searchHistoryUsers(uuid_users);
+            log.info(String.valueOf(historyTransaction));
+            return commonResponseGenerator.succsesResponse(historyTransaction,"Sukses Mencari Jadwal Transaction");
+        } catch (Exception e) {
+            log.warn(String.valueOf(e));
+            return commonResponseGenerator.failedResponse(e.getMessage());
+        }
+    }
+
+    @GetMapping(value = "/date/{departure_date}/{uuid_users}")
+    @Operation(description = "Menampilkan Tanggal Transaksi")
+    public CommonResponse<List<HistoryTransactionEntity>> getHistory(@PathVariable Date departure_date, @PathVariable UUID uuid_users){
+        try {
+            List<HistoryTransactionEntity> historyTransaction = historyTransactionService.searchHistoryByDateAndUUIDUsers(departure_date,uuid_users);
+            log.info(String.valueOf(historyTransaction));
+            return commonResponseGenerator.succsesResponse(historyTransaction,"Sukses Mencari Jadwal Transaction");
+        } catch (Exception e) {
+            log.warn(String.valueOf(e));
+            return commonResponseGenerator.failedResponse(e.getMessage());
+        }
+    }
+
+    @GetMapping(value = "/UUID/{uuid_users}/{history_uid}")
+    @Operation(description = "Menampilkan Tanggal Transaksi")
+    public CommonResponse<List<HistoryTransactionEntity>> getHistory(@PathVariable UUID uuid_users, @PathVariable UUID history_uid){
+        try {
+            List<HistoryTransactionEntity> historyTransaction = historyTransactionService.searchHistoryByUUIDUserAndHistory(uuid_users,history_uid);
             log.info(String.valueOf(historyTransaction));
             return commonResponseGenerator.succsesResponse(historyTransaction,"Sukses Mencari Jadwal Transaction");
         } catch (Exception e) {
